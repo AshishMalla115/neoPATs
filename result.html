@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Your Result</h2>
+    <h3 id="score"></h3>
+    <a href="dashboard.html">Go Home</a>
+  </div>
+
+<script>
+  document.getElementById("score").innerText =
+    "Score: " + localStorage.getItem("score");
+</script>
+</body>
+</html>
